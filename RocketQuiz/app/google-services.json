@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "242966230902",
+    "firebase_url": "https://rocketquiz-6ca42.firebaseio.com",
+    "project_id": "rocketquiz-6ca42",
+    "storage_bucket": "rocketquiz-6ca42.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:242966230902:android:8b26b1237815e782",
+        "android_client_info": {
+          "package_name": "jamespollitt.rocketquiz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "242966230902-4074m9pejcvdf4k8tv26cj5s9vesortg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "jamespollitt.rocketquiz",
+            "certificate_hash": "70348d478612c490fc2470ebe003bca6b10f91fc"
+          }
+        },
+        {
+          "client_id": "242966230902-kl2b2b0u93ibamdnrohfam05717c5hbl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJ6YeALllwi0ExN94yH4LNTTwUuWOQCh4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "242966230902-kl2b2b0u93ibamdnrohfam05717c5hbl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

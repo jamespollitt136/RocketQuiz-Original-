@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/homeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context="jamespollitt.rocketquiz.HomeActivity">
+
+    <RelativeLayout
+        android:id="@+id/homeHeaderLayout"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimaryDark">
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/accountProfilePic"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/avatar_astronaut" />
+
+        <TextView
+            android:id="@+id/homeNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="11dp"
+            android:layout_toEndOf="@+id/accountProfilePic"
+            android:text="@string/home_username_placeholder"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/homeGameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/homeHeaderLayout"
+        android:background="@drawable/home_game">
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/homePlayBtn"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/home_play_button"
+        android:text="@string/home_play_button"
+        android:textColor="#fff"
+        android:layout_above="@+id/homeActionsScroll"
+        android:layout_centerHorizontal="true" />
+
+    <ScrollView
+        android:id="@+id/homeActionsScroll"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/homeGameLayout"
+        android:background="@color/colorPrimaryDark">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/homeLeaderboardBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/rounded_button"
+                android:drawableLeft="@drawable/icon_leaderboard"
+                android:onClick="homeInteractionHandler"
+                android:paddingEnd="40dp"
+                android:paddingStart="5dp"
+                android:text="@string/home_leaderboard_button" />
+
+            <Button
+                android:id="@+id/storeBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/rounded_button"
+                android:drawableLeft="@drawable/icon_store"
+                android:onClick="homeInteractionHandler"
+                android:paddingEnd="48dp"
+                android:paddingStart="5dp"
+                android:text="@string/home_store_button" />
+
+            <Button
+                android:id="@+id/settingsBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/rounded_button"
+                android:drawableLeft="@drawable/icon_settings"
+                android:onClick="homeInteractionHandler"
+                android:paddingEnd="45dp"
+                android:paddingLeft="5dp"
+                android:text="@string/home_settings_button" />
+
+            <Button
+                android:id="@+id/informationBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/rounded_button"
+                android:drawableLeft="@drawable/icon_info"
+                android:onClick="homeInteractionHandler"
+                android:paddingEnd="45dp"
+                android:paddingStart="5dp"
+                android:text="@string/home_information_button" />
+
+            <Button
+                android:id="@+id/bugBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/rounded_button"
+                android:drawableLeft="@drawable/icon_bug"
+                android:onClick="homeInteractionHandler"
+                android:paddingEnd="45dp"
+                android:paddingStart="5dp"
+                android:text="@string/home_reportbug_button" />
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/homeAdView"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3356582602697138/8055955476"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

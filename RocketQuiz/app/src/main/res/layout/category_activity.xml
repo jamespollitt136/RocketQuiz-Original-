@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context="jamespollitt.rocketquiz.CategoryActivity">
+
+    <TextView
+        android:id="@+id/categoryTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="16dp"
+        android:text="@string/cat_page_title"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_below="@+id/categoryTitle"
+        android:layout_marginTop="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/filmTvBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_button"
+                android:backgroundTint="#32BEA6"
+                android:drawableLeft="@drawable/icon_film"
+                android:onClick="categoryClicked"
+                android:paddingEnd="45dp"
+                android:paddingStart="5dp"
+                android:text="@string/cat_film_option"
+                android:textColor="#000"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/categoryTitle"
+                tools:layout_constraintTop_creator="1" />
+
+            <Button
+                android:id="@+id/genKnowledgeBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/rounded_button"
+                android:backgroundTint="#FF5B62"
+                android:drawableLeft="@drawable/icon_genkno"
+                android:onClick="categoryClicked"
+                android:paddingEnd="45dp"
+                android:paddingLeft="5dp"
+                android:text="@string/cat_genkno_option" />
+
+            <Button
+                android:id="@+id/geographyBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/rounded_button"
+                android:backgroundTint="#48BBEE"
+                android:drawableLeft="@drawable/icon_geography"
+                android:onClick="categoryClicked"
+                android:paddingEnd="45dp"
+                android:paddingStart="5dp"
+                android:text="@string/cat_geography_option"
+                android:textColor="#000" />
+
+            <Button
+                android:id="@+id/literatureBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/rounded_button"
+                android:backgroundTint="#FFCA4F"
+                android:drawableLeft="@drawable/icon_literature"
+                android:onClick="categoryClicked"
+                android:paddingRight="45dp"
+                android:paddingStart="5dp"
+                android:text="@string/cat_literature_option"
+                android:textColor="#000" />
+
+            <Button
+                android:id="@+id/mathsBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/rounded_button"
+                android:backgroundTint="#0088FF"
+                android:drawableLeft="@drawable/icon_maths"
+                android:onClick="categoryClicked"
+                android:paddingEnd="45dp"
+                android:paddingStart="5dp"
+                android:text="@string/cat_maths_option"
+                android:textColor="#000" />
+
+            <Button
+                android:id="@+id/scienceBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/rounded_button"
+                android:backgroundTint="#5DDDD3"
+                android:drawableLeft="@drawable/icon_science"
+                android:onClick="categoryClicked"
+                android:paddingEnd="45dp"
+                android:paddingStart="5dp"
+                android:text="@string/cat_science_option"
+                android:textColor="#000" />
+
+            <Button
+                android:id="@+id/technologyBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/rounded_button"
+                android:backgroundTint="#FD8469"
+                android:drawableLeft="@drawable/icon_tech"
+                android:onClick="categoryClicked"
+                android:paddingEnd="45dp"
+                android:paddingStart="5dp"
+                android:text="@string/cat_tech_option"
+                android:textColor="#000" />
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/categoryAdView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3356582602697138/8055955476" />
+
+</RelativeLayout>

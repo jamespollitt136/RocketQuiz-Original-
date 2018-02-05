@@ -1,0 +1,133 @@
+<resources>
+    <string name="app_name">RocketQuiz</string>
+    <string name="logo_description">Application logo.</string>
+
+    <!-- Strings for Login -->
+    <string name="login_email_hint">Email Address</string>
+    <string name="login_password_hint">Password</string>
+    <string name="login_signin_button">Sign In</string>
+
+    <string name="login_create_account">Sign Up</string>
+    <string name="login_forgot_password">Forgotten password?</string>
+
+    <!-- Strings for Registration -->
+    <string name="reg_account_details">Provide the following details:</string>
+    <string name="reg_name_hint">First Name</string>
+    <string name="reg_surname_hint">Surname</string>
+    <string name="reg_confirm_hint">Confirm Password</string>
+    <string name="reg_signup_button">Sign Up</string>
+    <string name="reg_account_already">I already have an account</string>
+
+    <!-- Strings for Home -->
+    <string name="home_username_placeholder">User Name</string>
+    <string name="home_play_button">Play!</string>
+    <string name="home_leaderboard_button">Leaderboard</string>
+    <string name="home_store_button">Store</string>
+    <string name="home_settings_button">Settings</string>
+    <string name="home_information_button">Information</string>
+    <string name="home_reportbug_button">Report a Bug</string>
+
+    <!-- Strings for Account -->
+    <string name="acc_correct_bar">Correct</string>
+    <string name="acc_wrong_bar">Wrong</string>
+    <string name="acc_edit_text">Edit</string>
+    <string name="acc_change_pass">Change Password</string>
+    <string name="acc_change_email">Change Email</string>
+    <string name="acc_change_name">Change Name</string>
+    <string name="acc_logout_button">Logout</string>
+    <string name="acc_delete_text">Delete Account</string>
+
+    <!-- Strings for Category Activity -->
+    <string name="cat_page_title">Quiz Categories</string>
+    <string name="cat_film_option">Film &#038; TV</string>
+    <string name="cat_genkno_option">General Knowledge</string>
+    <string name="cat_geography_option">Geography</string>
+    <string name="cat_literature_option">Literature</string>
+    <string name="cat_maths_option">Maths</string>
+    <string name="cat_science_option">Science</string>
+    <string name="cat_tech_option">Technology</string>
+
+    <!-- Strings for Game Activity -->
+    <string name="game_bplanet_desc">Blue Planet for Option 1</string>
+    <string name="game_rplanet_desc">Red Planet for Option 2</string>
+    <string name="game_oplanet_desc">Orange Planet for Option 3</string>
+    <string name="game_rocket_desc">User controlled rocket</string>
+    <string name="game_heart_desc">User\'s remaining lives</string>
+    <string name="game_question_text">Question Placeholder</string>
+    <string name="game_default_score">000</string>
+    <string name="game_answer1_default">Answer 1</string>
+    <string name="game_answer2_default">Answer 2</string>
+    <string name="game_answer3_default">Answer 3</string>
+
+    <!-- Strings for GameEndActivity -->
+    <string name="gameend_gameover_text">Game Over!</string>
+    <string name="gameend_scored_text">You scored: </string>
+    <string name="gameend_continue_button">Continue</string>
+    <string name="gameend_share_button">Share</string>
+
+    <!-- Strings for Terms & Conditions page -->
+    <string name="tc_title_text">End User License Agreement</string>
+    <string name="tc_body_text">
+        The information contained within this page is to be read by the user before progressing
+        further into the application than the user registration/sign up page. By agreeing to the
+        terms and conditions you accept all of the following:\n\n
+
+        1. Terms of Use \n\n
+        1.1. Right to Terminate Users: By agreeing to the terms of use you agree to follow any rules
+        set out by RocketQuiz in terms of the user behaviour when using the application. RocketQuiz
+        has the right to terminate or ban your account if you fail to meet expectations of users and fall
+        out of accordance with the rules.\n\n
+        1.2. Copyright Infringement: If any content you provide breaches copyright laws,
+        RocketQuiz has the right to remove the infringing material without notice.\nRocketQuiz will
+        only act upon infringing copyright material should the rightful owner make a claim and provide
+        any relevant information and body of proof to show official ownership of content.\n\n
+        1.3. Retention of the Right to Change the App at Any Time: RocketQuiz has the sole right to
+        modify and alter the application in any way. This includes the removal or discontinuing of
+        features.\n\n
+        1.4. Distribution: The user has the right to access the application from the relevant
+        application store whether it be Google Play or App Store. RocketQuiz agrees to non-exclusive,
+        worldwide, and perpetual license to perform, display, and use the Product on the Device.\n\n
+        1.5. Freedom of Use: RocketQuiz will provide you with the means to alter or remove your account
+        from the application should you deem fit.\n\n
+
+        2. User Information \n\n
+        2.1. User Details: Any details you provide within the application such as name, email, photo,
+        etc. can be stored and used by RocketQuiz. This includes any details obtained via social
+        services such as Facebook and Google.\n\n
+        2.2. Information Security: Any information provided by the user will be appropriately stored
+        and used. RocketQuiz will not misuse your information. RocketQuiz sets out to meet the
+        standards of governing bodies and the laws they set out in regards to copyright, computer
+        misuse and the storing of data.\n\n
+        2.3. Sensitive Information: RocketQuiz will set out to make sure they follow all the best
+        practices when storing any sensitive information from the user. Should any issues arise with
+        a users personal information within RocketQuiz or on any website or application such as
+        unauthorised access to a users account, RocketQuiz will not be held responsible. The user
+        should follow steps to minimise the risk of unauthorised access by:\n\n
+        &#009;&#009;&#009;&#009;a) Not sharing their email and passwords with anybody.\n\n
+        &#009;&#009;&#009;&#009;b) Not sharing their device containing RocketQuiz with anybody.\n\n
+        &#009;&#009;&#009;&#009;c) Not using the same email and password combination across services and platforms.\n\n
+        &#009;&#009;&#009;&#009;d) Follow strong password creation measures such as using upper and lowercase characters,
+        special characters and numbers in their password and avoiding common password phrases such
+        as: \'letmein\', \'password\', pet names or the users real name.\n\n
+
+        3. Content Provided by User \n\n
+        3.1. Ownership of User Content: RocketQuiz does not claim any ownership of user provided
+        content, the sole rights to the ownership of the content belongs to the user.\n\n
+        3.2. Use of User Content: By accepting the terms and conditions you agree for RocketQuiz to
+        make use of any information or content you provide and upload via the application in any
+        marketing material which will not require the user to be credited or compensated in any
+        manner for use of their content. Although RocketQuiz has no ownership of the users content,
+        RocketQuiz has the right to display the content in any method deemed appropriate by the
+        RocketQuiz team and any service provider requirements.\n\n
+
+        4. Legal \n\n
+        4.1. You will take no legal actions against RocketQuiz or the service providers should you
+        accept the terms and conditions set out by any of the providers such as RocketQuiz, Facebook
+        and Google or any subsidiaries that are owned by the named companies and organisations.\n\n
+
+        Should you not agree with any of the stated information above, you are not being forced or
+        are required to use the RocketQuiz application and should proceed to delete the application
+        from your mobile or tablet device before registering an account.\n\n
+    </string>
+
+</resources>
